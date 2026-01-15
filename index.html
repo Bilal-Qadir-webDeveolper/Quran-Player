@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/jpg" href="media/quran.jpg">
+	<title>Quran Player</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/6c6635154c.js" crossorigin="anonymous"></script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GCLF80M8L8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GCLF80M8L8');
+</script>
+</head>
+<body>
+	<div class="container">
+		<div class="music-player">
+			<nav>
+				<div class="circle">
+					<i class="fa-solid fa-angle-left"></i>
+				</div>
+				<div class="circle">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+			</nav>
+			<img src="media/quran.jpg" class="song-img">
+			<h1>Qari Abdul Rahman Al Ossi</h1>
+			<p>Quran Surah Rahman Full</p>
+
+			<audio id="song">
+				<source src="media/quran.mp3" type="audio/mpeg">
+			</audio>
+			<input type="range" name="range" value="0" id="progress">
+
+			<div class="controls">
+				<div><i class="fa-solid fa-backward"></i></div>
+				<div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+				<div><i class="fa-solid fa-forward"></i></div>
+			</div>
+
+		</div>
+	</div>
+</body>
+<script src="script.js"> 
+	
+</script>
+</html>
